@@ -1,0 +1,15 @@
+managed implementation in class zcl_retailers unique;
+
+define behavior for ZCDS_RETAILERS alias retailers
+persistent table zapo_retailers
+lock master
+authorization master ( instance )
+{
+  // Default Actions
+  create;
+  update;
+  delete;
+
+  // Fields
+  field ( mandatory ) Retailerid;
+}
