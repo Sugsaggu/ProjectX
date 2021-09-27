@@ -3,7 +3,7 @@
  <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
   <asx:values>
    <VSEOCLASS>
-    <CLSNAME>ZCL_RETAILERS</CLSNAME>
+    <CLSNAME>ZCL_CDS_RETAILERS</CLSNAME>
     <LANGU>E</LANGU>
     <DESCRIPT>Behavior Implementation for ZCDS_RETAILERS</DESCRIPT>
     <CATEGORY>06</CATEGORY>
