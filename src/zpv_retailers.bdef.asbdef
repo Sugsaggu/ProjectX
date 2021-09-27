@@ -1,0 +1,8 @@
+projection;
+
+define behavior for ZPV_RETAILERS alias retailers
+{
+  use create;
+  use update;
+  use delete;
+}

@@ -1,15 +1,21 @@
-managed implementation in class zcl_retailers unique;
+managed implementation in class zcl_cds_retailers unique;
 
 define behavior for ZCDS_RETAILERS alias retailers
 persistent table zapo_retailers
 lock master
 authorization master ( instance )
 {
+  // Fields
+  field ( readonly : update ) Retailerid; // Read only on Update
+  field ( mandatory : create ) Retailerid; // Mandaroty on Create
+
   // Default Actions
   create;
   update;
   delete;
 
-  // Fields
-  field ( mandatory ) Retailerid;
+  // Validations
+  validation validateLand1 on save { field Land1; } // Valid Country Code
+
+  mapping for ZCDS_RETAILERS corresponding;
 }

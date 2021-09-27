@@ -1,0 +1,9 @@
+projection;
+
+define behavior for zpv_sku alias sku
+{
+  use create;
+  use update;
+  use delete;
+
+}
