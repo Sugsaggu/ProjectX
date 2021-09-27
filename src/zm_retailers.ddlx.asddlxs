@@ -1,0 +1,42 @@
+@Metadata.layer: #CORE
+@UI: { headerInfo: { typeName: 'Retailer',
+                     typeNamePlural: 'Retailers',
+                     title: { type: #STANDARD,
+                              value: 'Retailerid' } } }
+annotate view ZPV_RETAILERS with
+{
+  @UI.facet: [ { id:              'retailerId',
+                  purpose:         #STANDARD,
+                  type:            #IDENTIFICATION_REFERENCE,
+                  label:           'Retailer',
+                  position:        10 }]
+  @UI: {
+      lineItem:       [ { position: 10, importance: #HIGH } ],
+      identification: [ { position: 10, label: 'RetailerID' } ],
+      selectionField: [ { position: 10 } ] }
+  Retailerid;
+
+  @UI: {
+      lineItem:       [ { position: 20, importance: #HIGH } ],
+      identification: [ { position: 20 } ],
+      selectionField: [ { position: 20 } ] }
+  Land1;
+
+  @UI: {
+      lineItem:       [ { position: 30, importance: #HIGH } ],
+      identification: [ { position: 30, label: 'Name' } ] }
+  Name1;
+  @UI: {
+      lineItem:       [ { position: 40 } ],
+      identification: [ { position: 40, label: 'Fax' } ] }
+  Fax;
+  @UI: {
+      lineItem:       [ { position: 50 } ],
+      identification: [ { position: 50, label: 'Email' } ] }
+  Email;
+  @UI: {
+      lineItem:       [ { position: 60 } ],
+      identification: [ { position: 60, label: 'Street' } ] }
+  Street;
+
+}

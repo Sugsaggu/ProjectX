@@ -1,0 +1,44 @@
+@Metadata.layer: #CORE
+@UI: { headerInfo: { typeName: 'SKU',
+                     typeNamePlural: 'SKU',
+                     title: { type: #STANDARD,
+                              value: 'SKU' } } }
+annotate view zpv_sku with
+{
+  @UI.facet: [ { id:              'sku',
+                  purpose:         #STANDARD,
+                  type:            #IDENTIFICATION_REFERENCE,
+                  label:           'SKU',
+                  position:        10 }]
+  @UI.hidden: true
+  @UI: {
+      lineItem:       [ { position: 10, importance: #HIGH } ],
+      identification: [ { position: 10, label: 'SKU UUID' } ] }
+  SkuUuid;
+  @UI: {
+      lineItem:       [ { position: 20, importance: #HIGH } ],
+      identification: [ { position: 20, label: 'SKU' } ],
+      selectionField: [ { position: 20 } ] }
+  Sku;
+  @UI: {
+      lineItem:       [ { position: 30, importance: #HIGH } ],
+      identification: [ { position: 30 } ] }
+  Description;
+  @UI: {
+      lineItem:       [ { position: 40, importance: #HIGH } ],
+      identification: [ { position: 40, label: 'Theme' } ] }
+  Theme;
+  @UI: {
+      lineItem:       [ { position: 50, importance: #HIGH } ],
+      identification: [ { position: 50, label: 'UoM' } ] }
+  Uom;
+  @UI: {
+      lineItem:       [ { position: 60, importance: #HIGH } ],
+      identification: [ { position: 60, label: 'Unrestricted-Use Stock' } ] }
+  Stock;
+  @UI: {
+      lineItem:       [ { position: 70 } ],
+      identification: [ { position: 70, label: 'Created On' } ] }
+  Ersda;
+
+}

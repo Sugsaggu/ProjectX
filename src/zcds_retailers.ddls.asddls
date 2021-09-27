@@ -10,5 +10,25 @@ define root view ZCDS_RETAILERS
       @Semantics.address.country: true
       land1      as Land1,
       @Semantics.organization.name: true
-      name1      as Name1
+      name1      as Name1,
+      @Semantics.telephone: {
+          type: [#FAX]
+      }
+      fax        as Fax,
+      @Semantics.eMail: {
+          type: [#WORK],
+          address: true,
+          from: true,
+          sender: true,
+          to: true,
+          cc: true,
+          bcc: true,
+          subject: true,
+          body: true,
+          keywords: true,
+          received: true
+      }
+      email      as Email,
+      @Semantics.address.street: true
+      street     as Street
 }
