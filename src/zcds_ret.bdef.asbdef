@@ -1,0 +1,17 @@
+managed implementation in class zcl_cds_ret unique;
+
+define behavior for ZCDS_RET alias ret
+persistent table zapo_ret
+lock master
+authorization master ( instance )
+{
+  // Fields
+  field ( mandatory : create ) Retailerid, Sku; // Mandaroty on Create
+
+  // Default Actions
+  create;
+  update;
+  delete;
+
+  mapping for ZCDS_RET corresponding;
+}

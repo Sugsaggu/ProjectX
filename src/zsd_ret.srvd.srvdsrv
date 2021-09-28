@@ -1,0 +1,4 @@
+@EndUserText.label: 'Fiori - Retailers'
+define service ZSD_RET {
+  expose ZPV_RET;
+}

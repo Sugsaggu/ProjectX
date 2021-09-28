@@ -9,7 +9,7 @@ authorization master ( instance )
   // Fields
   field ( readonly, numbering : managed ) SkuUuid;
   field ( readonly ) Sku; // SKU always on Read Only
-  field ( readonly ) Ersda; // Creation On for demo is created automatically
+  field ( readonly ) Ersda; // Creation On, for demo is created automatically
 
   // Default Actions due to Managed scenario
   create;

@@ -1,0 +1,46 @@
+@Metadata.layer: #CORE
+@UI: { headerInfo: { typeName: 'Sales per Retailer',
+                     typeNamePlural: 'Sales per Retailer',
+                     title: { type: #STANDARD,
+                              value: 'Retailerid' } } }
+annotate view ZPV_RET with
+{
+  @UI.facet: [ { id:              'retailerId',
+                  purpose:         #STANDARD,
+                  type:            #IDENTIFICATION_REFERENCE,
+                  label:           'Retailer',
+                  position:        10 }]
+  @UI: {
+      lineItem:       [ { position: 10, importance: #HIGH } ],
+      identification: [ { position: 10, label: 'RetailerID' } ],
+      selectionField: [ { position: 10 } ] }
+  @Search.defaultSearchElement: true
+  @Search.fuzzinessThreshold : 0.8
+  @Search.ranking : #HIGH
+  Retailerid;
+  @UI: {
+      lineItem:       [ { position: 20, importance: #HIGH } ],
+      identification: [ { position: 20, label: 'SKU' } ],
+      selectionField: [ { position: 20 } ] }
+  @Search.defaultSearchElement: true
+  @Search.fuzzinessThreshold : 0.8
+  @Search.ranking : #HIGH
+  Sku;
+  @UI: {
+      lineItem:       [ { position: 30, importance: #HIGH } ],
+      identification: [ { position: 30, label: 'Description' } ],
+      selectionField: [ { position: 30 } ] }
+  @Search.defaultSearchElement: true
+  @Search.fuzzinessThreshold : 0.7
+  @Search.ranking : #LOW
+  Description;
+  @UI: {
+      lineItem:       [ { position: 40, importance: #HIGH } ],
+      identification: [ { position: 40, label: 'Theme' } ],
+      selectionField: [ { position: 40 } ] }
+  @Search.defaultSearchElement: true
+  @Search.fuzzinessThreshold : 0.7
+  @Search.ranking : #LOW
+  Theme;
+
+}
