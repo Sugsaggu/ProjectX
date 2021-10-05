@@ -3,12 +3,10 @@
 {
 "FROM":
 [
-"ZCDS_SKU"
+"ZCDS_SALES_RET"
 ],
 "ASSOCIATED":
-[
-"I_UNITOFMEASUREDIMENSION"
-],
+[],
 "BASE":
 [],
 "ANNO_REF":
