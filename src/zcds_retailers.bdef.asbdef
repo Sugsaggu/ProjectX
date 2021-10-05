@@ -17,5 +17,4 @@ authorization master ( instance )
   // Validations
   validation validateLand1 on save { field Land1; } // Valid Country Code
 
-  mapping for ZCDS_RETAILERS corresponding;
 }
