@@ -1,0 +1,20 @@
+managed implementation in class zcl_cds_stock unique;
+
+define behavior for ZCDS_STOCK alias stock
+persistent table zapo_sku
+lock master
+authorization master ( instance )
+{
+  // Fields
+  field ( readonly, numbering : managed ) Skuuuid; //This field is always on read and the numbering is determined automatically (for demo)
+  field ( readonly ) Sku; // SKU always on Read Only
+
+  // Default Actions
+  create;
+  update;
+  delete;
+
+  // Determination of fields automatically
+  determination setValues on save { create; } //Generate a random number for new SKU (read implementation)
+
+}

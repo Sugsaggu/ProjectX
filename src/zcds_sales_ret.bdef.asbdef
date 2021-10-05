@@ -1,0 +1,25 @@
+managed implementation in class zcl_cds_sales_ret unique;
+
+define behavior for zcds_sales_ret alias sales
+persistent table zapo_sales
+lock master
+authorization master ( instance )
+{
+  // Fields
+  field ( mandatory : create ) Retailerid, Sku, SalesDate; // Mandaroty on Create
+  field ( readonly ) Description, Theme; // Read only always
+  field ( readonly : update ) Retailerid, Sku, SalesDate; // Read only on Update
+
+  // Default Actions
+  create;
+  update;
+  delete;
+
+  //Determination
+  determination detStockFields on modify { create; } //Determine fields Description and Theme automatically
+
+  // Validations
+  validation validateRetailerid on save { field Retailerid; } // Valid Retailer ID
+  validation validateSku on save { field Sku; } // Valid SKU
+
+}

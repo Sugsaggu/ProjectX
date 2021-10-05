@@ -7,11 +7,11 @@ authorization master ( instance )
 {
   // Fields
   field ( mandatory : create ) Retailerid, Sku; // Mandaroty on Create
+  field ( readonly : update ) Retailerid; // Mandaroty on Create
 
   // Default Actions
   create;
   update;
   delete;
 
-  mapping for ZCDS_RET corresponding;
 }
