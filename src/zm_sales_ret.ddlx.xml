@@ -4,8 +4,8 @@
   <asx:values>
    <DDLX>
     <METADATA>
-     <NAME>ZM_SKU</NAME>
-     <DESCRIPTION>Fiori - SKU</DESCRIPTION>
+     <NAME>ZM_SALES_RET</NAME>
+     <DESCRIPTION>Fiori - Sales</DESCRIPTION>
      <MASTER_LANGUAGE>EN</MASTER_LANGUAGE>
     </METADATA>
    </DDLX>

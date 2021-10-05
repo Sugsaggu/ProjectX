@@ -12,7 +12,7 @@ annotate view ZPV_RETAILERS with
                   position:        10 }]
   @UI: {
       lineItem:       [ { position: 10, importance: #HIGH } ],
-      identification: [ { position: 10, label: 'RetailerID' } ],
+      identification: [ { position: 10, label: 'Retailer ID' } ],
       selectionField: [ { position: 10 } ] }
   Retailerid;
 

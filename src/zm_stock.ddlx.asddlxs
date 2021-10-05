@@ -1,0 +1,32 @@
+@Metadata.layer: #CORE
+@UI: { headerInfo: { typeName: 'Stock',
+                     typeNamePlural: 'Stock',
+                     title: { type: #STANDARD,
+                              value: 'Sku' } } }
+annotate view ZPV_STOCK with
+{
+  @UI.facet: [ { id:              'stock',
+                  purpose:         #STANDARD,
+                  type:            #IDENTIFICATION_REFERENCE,
+                  label:           'Stock',
+                  position:        10 }]
+
+  @UI.hidden: true
+  Skuuuid; //Not required in display, only for demo
+  @UI: {
+      lineItem:       [ { position: 10, importance: #HIGH } ],
+      identification: [ { position: 10, label: 'Sku' } ],
+      selectionField: [ { position: 10 } ] }
+  Sku;
+  @UI: {
+      lineItem:       [ { position: 20, importance: #HIGH } ],
+      identification: [ { position: 20, label: 'Description' } ],
+      selectionField: [ { position: 20 } ] }
+  Description;
+  @UI: {
+      lineItem:       [ { position: 30, importance: #HIGH } ],
+      identification: [ { position: 30, label: 'Theme' } ],
+      selectionField: [ { position: 30 } ] }
+  Theme;
+
+}

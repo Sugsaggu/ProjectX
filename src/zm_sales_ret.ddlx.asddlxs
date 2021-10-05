@@ -1,0 +1,44 @@
+@Metadata.layer: #CORE
+@UI: { headerInfo: { typeName: 'Sales',
+                     typeNamePlural: 'Sales',
+                     title: { type: #STANDARD,
+                              value: 'Retailerid' } } }
+annotate view ZPV_SALES_RET with
+{
+  @UI.facet: [ { id:              'sales',
+                  purpose:         #STANDARD,
+                  type:            #IDENTIFICATION_REFERENCE,
+                  label:           'Sales',
+                  position:        10 }]
+  @UI: {
+      lineItem:       [ { position: 10, importance: #HIGH } ],
+      identification: [ { position: 10 } ],
+      selectionField: [ { position: 10 } ] }
+  Retailerid;
+  @UI: {
+      lineItem:       [ { position: 20, importance: #HIGH } ],
+      identification: [ { position: 20 } ],
+      selectionField: [ { position: 20 } ] }
+  Sku;
+  @UI: {
+    lineItem:       [ { position: 30, importance: #HIGH } ],
+    identification: [ { position: 30 } ],
+    selectionField: [ { position: 30 } ] }
+  SalesDate;
+  @UI: {
+      lineItem:       [ { position: 40, importance: #HIGH } ],
+      identification: [ { position: 40 } ] }
+  Description;
+  @UI: {
+      lineItem:       [ { position: 50, importance: #HIGH } ],
+      identification: [ { position: 50 } ] }
+  Theme;
+  @UI: {
+      lineItem:       [ { position: 60, importance: #HIGH } ],
+      identification: [ { position: 60 } ] }
+  Quantity;
+  @UI: {
+      lineItem:       [ { position: 70 } ],
+      identification: [ { position: 70 } ] }
+  QuantityUnit;
+}
