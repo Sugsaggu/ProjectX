@@ -1,0 +1,4 @@
+@EndUserText.label: 'Fiori - STock'
+define service ZSD_STOCK {
+  expose ZPV_STOCK;
+}

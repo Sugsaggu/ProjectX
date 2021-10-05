@@ -1,0 +1,9 @@
+@EndUserText.label: 'Fiori - Sales'
+define service ZSD_SALES_RET {
+  expose ZPV_SALES_RET;
+  expose ZCDS_STOCK_CHART;
+  expose ZCDS_SKU_RET;
+  expose ZCDS_SKU_LAND;
+  expose ZCDS_SKU_DATE;
+  expose ZCDS_QUAN_RET;
+}

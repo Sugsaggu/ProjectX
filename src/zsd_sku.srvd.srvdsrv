@@ -1,4 +1,0 @@
-@EndUserText.label: 'Fiori - SKU'
-define service ZSD_SKU {
-  expose zpv_sku;
-}
