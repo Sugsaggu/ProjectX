@@ -3,16 +3,15 @@
  <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
   <asx:values>
    <VSEOCLASS>
-    <CLSNAME>ZCL_CDS_SKU</CLSNAME>
+    <CLSNAME>ZCL_CDS_STOCK</CLSNAME>
     <LANGU>E</LANGU>
-    <DESCRIPT>Behavior Implementation for ZCDS_SKU</DESCRIPT>
+    <DESCRIPT>Behavior Implementation for ZCDS_STOCK</DESCRIPT>
     <CATEGORY>06</CATEGORY>
     <STATE>1</STATE>
     <CLSCCINCL>X</CLSCCINCL>
     <FIXPT>X</FIXPT>
     <UNICODE>X</UNICODE>
-    <RSTAT>T</RSTAT>
-    <CLSDEFINT>ZCDS_SKU</CLSDEFINT>
+    <CLSDEFINT>ZCDS_STOCK</CLSDEFINT>
    </VSEOCLASS>
   </asx:values>
  </asx:abap>
